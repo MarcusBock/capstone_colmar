@@ -1,0 +1,58 @@
+body {
+  min-width: 20rem;
+  font-family: sans-serif;
+  margin: 0;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  height: 4rem;
+  width: 100%;
+  background-color: rgb(151, 32, 32);
+  font-size: 1.25rem;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+header > a {
+  margin-left: 24px;
+}
+
+header img {
+  height: 3.5rem;
+}
+
+nav {
+  flex-grow: 1;
+  margin-right: 16px;
+  justify-content: flex-end;
+}
+
+nav a {
+  margin: auto 8px;
+}
+
+@media screen and (max-width: 43.9375rem) {
+  header span {
+    display: none;
+  }
+  #nav-companies {
+    display: none;
+  }
+}
+@media screen and (min-width: 44rem) {
+  nav img {
+    display: none;
+  }
+}
